@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  web:  
+      build:
+        context: .
+        dockerfile: Dockerfile.flask
+      ports:
+      - "5000:5000"
+      depends_on:
+      - db
+    
+  db:
+    build: 
+      context: .
+      dockerfile: Dockerfile.redis
+    ports:
+      - "6379:6379"
+  
