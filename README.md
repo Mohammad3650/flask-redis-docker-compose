@@ -2,12 +2,11 @@
 
 ## Project Overview
 
-A Python Flask web application integrated with Redis, 
-containerised using Docker and orchestrated using 
-Docker Compose.
+A Python Flask web application integrated with Redis,
+containerised using Docker and managed using Docker Compose.
 
-This project demonstrates containerisation, 
-multi-container applications and Docker networking.
+This project demonstrates containerisation,
+multi-container architecture and Docker networking.
 
 ## Technologies Used
 
@@ -23,20 +22,29 @@ multi-container applications and Docker networking.
 
 The application consists of two containers:
 
-- Flask: Handles HTTP requests and application logic.
-- Redis: Provides a backend data store.
+- **Flask:** Handles HTTP requests and application logic.
+- **Redis:** Provides a backend data store.
 
-Both containers communicate through a Docker network 
+Both containers communicate through a Docker network
 managed by Docker Compose.
 
+Separate Dockerfiles are used to build the Flask and Redis
+images, while Docker Compose manages both services.
+
 ## How to Run
-git clone https://github.com/Mohammad3650/flask-redis-docker-compose.git
-cd flask-redis-docker-compose
 
 ### Prerequisites
 
+- Git
 - Docker
 - Docker Compose
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Mohammad3650/flask-redis-docker-compose.git
+cd flask-redis-docker-compose
+```
 
 ### Build and start the application
 
@@ -56,6 +64,7 @@ docker compose down
 - Managing multiple containers using Docker Compose.
 - Configuring inter-container communication.
 - Understanding Docker networking.
+- Using Linux for application and container management.
 - Using Git and GitHub for version control.
 
 ## Future Improvements
