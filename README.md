@@ -30,6 +30,8 @@ Both containers communicate through a Docker network
 managed by Docker Compose.
 
 ## How to Run
+git clone https://github.com/Mohammad3650/flask-redis-docker-compose.git
+cd flask-redis-docker-compose
 
 ### Prerequisites
 
